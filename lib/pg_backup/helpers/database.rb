@@ -12,7 +12,7 @@ module PgBackup
       end
 
       def connection_config
-        ActiveRecord::Base.connection_config
+        ActiveRecord::Base.connection_db_config.configuration_hash
       end
     end
   end
